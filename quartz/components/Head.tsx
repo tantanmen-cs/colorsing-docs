@@ -35,6 +35,7 @@ export default (() => {
       (e) => e.name === CustomOgImagesEmitterName,
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
+    const ogImageDefaultPathWebp = `https://${cfg.baseUrl}/static/og-image.webp`
 
     const coreStylesheet = css[0]?.content
     const coreScript = js.find(
