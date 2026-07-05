@@ -70,16 +70,16 @@ export default (() => {
         <meta name="twitter:description" content={description} />
         <meta property="og:description" content={description} />
         <meta property="og:image:alt" content={description} />
-        <meta property="og:image" content={ogImageDefaultPath} />
-        <meta property="og:image:url" content={ogImageDefaultPath} />
-        <meta name="twitter:image" content={ogImageDefaultPath} />
-        <meta
-          property="og:image:type"
-          content={`image/${getFileExtension(ogImageDefaultPath) ?? "png"}`}
-        />
 
         {!usesCustomOgImage && (
           <>
+            <meta property="og:image" content={ogImageDefaultPath} />
+            <meta property="og:image:url" content={ogImageDefaultPath} />
+            <meta name="twitter:image" content={ogImageDefaultPath} />
+            <meta
+              property="og:image:type"
+              content={`image/${getFileExtension(ogImageDefaultPath) ?? "png"}`}
+            />
           </>
         )}
 
